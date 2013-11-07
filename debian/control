@@ -1,0 +1,12 @@
+Source: ros-hydro-cv-camera
+Section: misc
+Priority: extra
+Maintainer: Takashi Ogura <t.ogura@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-camera-info-manager, ros-hydro-catkin, ros-hydro-cv-bridge, ros-hydro-image-transport, ros-hydro-nodelet, ros-hydro-opencv2, ros-hydro-roscpp, ros-hydro-sensor-msgs
+Homepage: http://wiki.ros.org/cv_camera
+Standards-Version: 3.9.2
+
+Package: ros-hydro-cv-camera
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-camera-info-manager, ros-hydro-cv-bridge, ros-hydro-image-transport, ros-hydro-nodelet, ros-hydro-opencv2, ros-hydro-roscpp, ros-hydro-sensor-msgs
+Description: cv_camera uses OpenCV capture object to capture camera image. This supports camera_image and nodelet.

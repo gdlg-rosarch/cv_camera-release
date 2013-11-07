@@ -1,0 +1,14 @@
+ros-hydro-cv-camera (0.0.1-0quantal) quantal; urgency=high
+
+  * change behavior with calibration yaml.
+    overwrite image size with yaml data if yaml is specified.
+    if no calib is provided, use image size.
+  * add offline mode and tests
+  * use camera_info_manager for CameraInfo.
+  * add parameters frame_id/image_width/image_height
+  * ROS Camera node by cv::VideoCapture
+  * Initial commit
+
+ -- Takashi Ogura <t.ogura@gmail.com>  Wed, 06 Nov 2013 15:00:00 -0000
+
+
