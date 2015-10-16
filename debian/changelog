@@ -1,0 +1,38 @@
+ros-jade-cv-camera (0.1.0-0trusty) trusty; urgency=high
+
+  * Fix opencv2 to libopencv-dev
+  * Contributors: Takashi Ogura
+
+ -- Takashi Ogura <t.ogura@gmail.com>  Fri, 16 Oct 2015 15:00:00 -0000
+
+ros-jade-cv-camera (0.0.3-0trusty) trusty; urgency=high
+
+  * Enable any prop code
+  * Fix coding style using roslint
+  * Support CV_CAP_PROP_* params
+  * Contributors: Takashi Ogura
+
+ -- Takashi Ogura <t.ogura@gmail.com>  Fri, 16 Oct 2015 15:00:00 -0000
+
+ros-jade-cv-camera (0.0.2-0trusty) trusty; urgency=high
+
+  * rostest should be build_depend (for binary package build)
+    see http://docs.ros.org/api/catkin/html/howto/rostest_configuration.html
+    for more information.
+
+ -- Takashi Ogura <t.ogura@gmail.com>  Thu, 07 Nov 2013 15:00:00 -0000
+
+ros-jade-cv-camera (0.0.1-0trusty) trusty; urgency=high
+
+  * change behavior with calibration yaml.
+    overwrite image size with yaml data if yaml is specified.
+    if no calib is provided, use image size.
+  * add offline mode and tests
+  * use camera_info_manager for CameraInfo.
+  * add parameters frame_id/image_width/image_height
+  * ROS Camera node by cv::VideoCapture
+  * Initial commit
+
+ -- Takashi Ogura <t.ogura@gmail.com>  Wed, 06 Nov 2013 15:00:00 -0000
+
+
