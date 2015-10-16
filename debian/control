@@ -1,0 +1,12 @@
+Source: ros-indigo-cv-camera
+Section: misc
+Priority: extra
+Maintainer: Takashi Ogura <t.ogura@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), libopencv-dev, ros-indigo-camera-info-manager, ros-indigo-catkin, ros-indigo-cv-bridge, ros-indigo-image-transport, ros-indigo-nodelet, ros-indigo-roscpp, ros-indigo-roslint, ros-indigo-rostest, ros-indigo-sensor-msgs
+Homepage: http://wiki.ros.org/cv_camera
+Standards-Version: 3.9.2
+
+Package: ros-indigo-cv-camera
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libopencv-dev, ros-indigo-camera-info-manager, ros-indigo-cv-bridge, ros-indigo-image-transport, ros-indigo-nodelet, ros-indigo-roscpp, ros-indigo-sensor-msgs
+Description: cv_camera uses OpenCV capture object to capture camera image. This supports camera_image and nodelet.
