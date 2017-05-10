@@ -1,0 +1,13 @@
+Source: ros-lunar-cv-camera
+Section: misc
+Priority: extra
+Maintainer: Takashi Ogura <t.ogura@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-camera-info-manager, ros-lunar-catkin, ros-lunar-cv-bridge, ros-lunar-image-transport, ros-lunar-nodelet, ros-lunar-opencv3, ros-lunar-roscpp, ros-lunar-roslint, ros-lunar-rostest, ros-lunar-sensor-msgs
+Homepage: http://wiki.ros.org/cv_camera
+Standards-Version: 3.9.2
+
+Package: ros-lunar-cv-camera
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-camera-info-manager, ros-lunar-cv-bridge, ros-lunar-image-transport, ros-lunar-nodelet, ros-lunar-opencv3, ros-lunar-roscpp, ros-lunar-sensor-msgs
+Description: cv_camera uses OpenCV capture object to capture camera image.
+ This supports camera_image and nodelet.
