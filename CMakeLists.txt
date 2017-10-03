@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8.3)
 project(cv_camera)
 
 find_package(catkin REQUIRED COMPONENTS
-  image_transport roscpp cv_bridge sensor_msgs nodelet camera_info_manager rostest roslint)
+  image_transport roscpp cv_bridge sensor_msgs nodelet camera_info_manager roslint)
 
 find_package(OpenCV REQUIRED)
 
@@ -14,7 +14,7 @@ catkin_package(
   INCLUDE_DIRS include
   LIBRARIES cv_camera
   CATKIN_DEPENDS image_transport roscpp cv_bridge sensor_msgs nodelet camera_info_manager
-  DEPENDS opencv2
+  DEPENDS OpenCV
   )
 
 include_directories(
@@ -26,7 +26,7 @@ include_directories(
 ## Declare a cpp library
 add_library(cv_camera src/capture.cpp src/driver.cpp)
 add_library(cv_camera_nodelet src/cv_camera_nodelet.cpp)
-  
+
 
 ## Declare a cpp executable
 add_executable(cv_camera_node src/cv_camera_node.cpp)
@@ -86,6 +86,7 @@ roslint_cpp(
   )
 
 if (CATKIN_ENABLE_TESTING)
+  find_package(rostest REQUIRED)
   add_rostest_gtest(test_cv_camera test/cv_camera.test
     test/test_cv_camera.cpp)
   target_link_libraries(test_cv_camera ${PROJECT_NAME} ${catkin_LIBRARIES})
