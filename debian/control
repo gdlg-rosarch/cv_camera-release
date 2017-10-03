@@ -1,0 +1,13 @@
+Source: ros-kinetic-cv-camera
+Section: misc
+Priority: extra
+Maintainer: Takashi Ogura <t.ogura@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-camera-info-manager, ros-kinetic-catkin, ros-kinetic-cv-bridge, ros-kinetic-image-transport, ros-kinetic-nodelet, ros-kinetic-opencv3, ros-kinetic-roscpp, ros-kinetic-roslint, ros-kinetic-rostest, ros-kinetic-sensor-msgs
+Homepage: http://wiki.ros.org/cv_camera
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-cv-camera
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-camera-info-manager, ros-kinetic-cv-bridge, ros-kinetic-image-transport, ros-kinetic-nodelet, ros-kinetic-opencv3, ros-kinetic-roscpp, ros-kinetic-sensor-msgs
+Description: cv_camera uses OpenCV capture object to capture camera image.
+ This supports camera_image and nodelet.
