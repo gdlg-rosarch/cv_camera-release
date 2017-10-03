@@ -1,3 +1,26 @@
+## cv_camera (kinetic) - 0.3.0-0
+
+The packages in the `cv_camera` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release cv_camera --track kinetic --rosdistro kinetic` on `Tue, 03 Oct 2017 07:53:18 -0000`
+
+The `cv_camera` package was released.
+
+Version of package(s) in repository `cv_camera`:
+
+- upstream repository: https://github.com/OTL/cv_camera
+- release repository: https://github.com/OTL/cv_camera-release.git
+- rosdistro version: `0.1.0-0`
+- old version: `0.1.0-0`
+- new version: `0.3.0-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.26`
+- catkin_pkg version: `0.3.6`
+- rosdep version: `0.11.8`
+- rosdistro version: `0.6.2`
+- vcstools version: `0.1.39`
+
+
 ## cv_camera (lunar) - 0.2.1-0
 
 The packages in the `cv_camera` repository were released into the `lunar` distro by running `/usr/bin/bloom-release cv_camera --track lunar --rosdistro lunar --new-track` on `Wed, 10 May 2017 13:20:30 -0000`
