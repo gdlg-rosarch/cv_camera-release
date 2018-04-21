@@ -2,13 +2,6 @@
 Changelog for package cv_camera
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.3.0 (2017-10-03)
-------------------
-* Update README.md
-* Add device_path support (`#8 <https://github.com/OTL/cv_camera/issues/8>`_)
-  * Add device_path support
-* Contributors: Maurice Meedendorp, Takashi Ogura
-
 0.2.1 (2017-05-05)
 ------------------
 * use OpenCV3
